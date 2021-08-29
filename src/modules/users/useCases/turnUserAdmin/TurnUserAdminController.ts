@@ -5,6 +5,7 @@ import { TurnUserAdminUseCase } from "./TurnUserAdminUseCase";
 class TurnUserAdminController {
   constructor(private turnUserAdminUseCase: TurnUserAdminUseCase) {}
 
+  // eslint-disable-next-line consistent-return
   handle(request: Request, response: Response): Response {
     const { user_id } = request.params;
 
